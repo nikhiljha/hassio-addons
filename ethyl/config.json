@@ -1,16 +1,13 @@
 {
-  "name": "Mosquitto broker",
-  "version": "2.0",
-  "slug": "mosquitto",
-  "description": "An Open Source MQTT broker",
-  "url": "https://home-assistant.io/addons/mosquitto/",
+  "name": "Ethyl Proxy",
+  "version": "1.0",
+  "slug": "ethylproxy",
+  "description": "Ethyl for HomeAssistant",
+  "url": "https://github.com/nikhiljha/ethyl-hassio",
   "startup": "system",
   "boot": "auto",
   "ports": {
-    "1883/tcp": 1883,
-    "1884/tcp": 1884,
-    "8883/tcp": 8883,
-    "8884/tcp": 8884
+    "6912/tcp": 6912
    },
   "map": ["ssl", "share"],
   "options": {
@@ -22,7 +19,7 @@
     "logins": [],
     "customize": {
       "active": false,
-      "folder": "mosquitto"
+      "folder": "ethyl"
     },
     "certfile": "fullchain.pem",
     "keyfile": "privkey.pem"
@@ -43,5 +40,5 @@
     "certfile": "str",
     "keyfile": "str"
   },
-  "image": "homeassistant/{arch}-addon-mosquitto"
+  "image": "ethyl/{arch}-addon-hass"
 }
