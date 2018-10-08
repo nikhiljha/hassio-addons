@@ -5,12 +5,12 @@ FROM $BUILD_FROM
 ENV LANG C.UTF-8
 
 # Setup base
-RUN apk add --no-cache nodejs-npm git nodejs
+RUN apk add --no-cache git nodejs yarn
 
 # Copy data
 COPY run.sh /
 RUN git clone https://github.com/nikhiljha/ethyl-hassio.git /etc/ethyl-hass
-RUN (cd /etc/ethyl-hass && npm install)
+RUN (cd /etc/ethyl-hass && yarn install)
 
 RUN chmod a+x /run.sh
 
