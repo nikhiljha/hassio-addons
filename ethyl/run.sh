@@ -5,6 +5,8 @@ CONFIG_PATH=/data/options.json
 
 # PLAIN=$(jq --raw-output ".plain" $CONFIG_PATH)
 
+exec mkdir ~/.config
+exec mkdir ~/.config/configstore
 exec cp $CONFIG_PATH ~/.config/configstore/ethyl-hass.json
 
 # start server
