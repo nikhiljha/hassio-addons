@@ -9,7 +9,6 @@ RUN apk add --no-cache git nodejs
 
 # Copy data
 COPY run.sh /
-COPY ethyl.conf /etc/
 CMD [ "git clone https://github.com/nikhiljha/ethyl-hassio.git /etc/ethyl-hass" ]
 
 RUN chmod a+x /run.sh
