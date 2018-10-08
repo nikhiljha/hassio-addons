@@ -11,18 +11,8 @@
    },
   "map": ["ssl", "share"],
   "options": {
-    "plain": true,
-    "plain_websockets": false,
-    "ssl": false,
-    "ssl_websockets": false,
-    "anonymous": true,
-    "logins": [],
-    "customize": {
-      "active": false,
-      "folder": "ethyl"
-    },
-    "certfile": "fullchain.pem",
-    "keyfile": "privkey.pem"
+    "key": null,
+    "api_pass": null
   },
   "schema": {
     "plain": "bool",
