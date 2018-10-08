@@ -5,7 +5,7 @@ FROM $BUILD_FROM
 ENV LANG C.UTF-8
 
 # Setup base
-RUN apk add --no-cache git nodejs
+RUN apk add --no-cache nodejs-npm git nodejs
 
 # Copy data
 COPY run.sh /
